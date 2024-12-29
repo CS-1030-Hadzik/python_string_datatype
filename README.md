@@ -106,41 +106,32 @@
 > # Output: Alice sleeps 8 hours and owns 2 dogs.
 
 
-## Escape characters and strings
->  - `illegal characters in a string require an escape character`
->  - `Use ` \ ` followed by the character `
->  - Escape Character `[\n \r \t \' \\ \b \f \ooo \xhh]`
->```python
-># use of single quote in string
-> txt = "Scott's Dog"
-> # or
-> txt = 'Scott\s Dog'
->   
-> #Using the format string method
-> age = 75
-> person = 'Scott is {}'
-> print (person.format(age))
-> 
-> #Using the format string method for multiple items
-> age = 75
-> hours = 10
-> person = 'Scott is {} he sleeps {} hours a day'
-> print (person.format(age, hours))
->
-> #Using the format string method for multiple items with index
-> age = 75
-> hours = 10
-> dogs = 5
-> person = 'Scott sleeps {1} hours a day. He is {0} years old. He has {2} dogs'
-> print (person.format(age, hours, dogs))
+## Escape Characters in Strings
+
+Escape characters allow you to include special characters in strings:
+
+- **`\'`**: Single quote  
+- **`\\`**: Backslash  
+- **`\n`**: Newline  
+- **`\t`**: Tab  
+
+### Code Example:
+```python
+# Using escape characters
+quote = 'It\'s a beautiful day!'
+path = "C:\\Users\\Alice\\Documents"
+print(quote)  # Output: It's a beautiful day!
+print(path)   # Output: C:\Users\Alice\Documents
+
+
 
 ## Common string methods
->  - `capitalize()` first character to uppercase
->  - `title()` first character of each word to uppercase
->  - `casefold()` lowercase
->  - `len()` return the length of the string
->  - `count()` number of times a value occurs in a string
->  - [additional string methods](https://realpython.com/python-strings/#built-in-string-methods)
+- `capitalize()` first character to uppercase
+- `title()` first character of each word to uppercase
+- `casefold()` lowercase
+- `len()` return the length of the string
+- `count()` number of times a value occurs in a string
+- [additional string methods](https://realpython.com/python-strings/#built-in-string-methods)
 
 >```python
 ># capitilize the first letter
