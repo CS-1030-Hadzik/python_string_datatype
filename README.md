@@ -10,7 +10,10 @@
 >  - Escape Character `[\n \r \t \' \\ \b \f \ooo \xhh]`
 
  ## String Indexing
->- Each character has an index
+> Strings in Python are sequences of characters, where each character has an index (positive or negative).
+>
+> Positive indexing starts at 0 and goes from left to right.
+> Negative indexing starts at -1 and goes from right to left.
 >
 >|Char#  |1  |2  |3  |4  |5  |6  |7  |8  |9  |10 |11|
 >|:-:    |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -81,10 +84,15 @@
 > person = 'Scott is ' + age
 > print (person)
 >   
-> #Using the format string method
-> age = 75
-> person = 'Scott is {}'
-> print (person.format(age))
+> # Using .format()
+> age = 25
+> name = "Alice"
+> print("{} is {} years old.".format(name, age))
+> # Output: Alice is 25 years old.
+
+> # Using f-strings (Python 3.6+)
+> print(f"{name} is {age} years old.")
+> # Output: Alice is 25 years old.
 > 
 > #Using the format string method for multiple items
 > age = 75
@@ -92,12 +100,11 @@
 > person = 'Scott is {} he sleeps {} hours a day'
 > print (person.format(age, hours))
 >
-> #Using the format string method for multiple items with index
-> age = 75
-> hours = 10
-> dogs = 5
-> person = 'Scott sleeps {1} hours a day. He is {0} years old. He has {2} dogs'
-> print (person.format(age, hours, dogs))
+> hours = 8
+> dogs = 2
+> print("{0} sleeps {1} hours and owns {2} dogs.".format(name, hours, dogs))
+> # Output: Alice sleeps 8 hours and owns 2 dogs.
+
 
 ## Escape characters and strings
 >  - `illegal characters in a string require an escape character`
